@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>亲爱的高玮女士破壳日快乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+        <img id="backgroundImage" src="./images/family.jpg" alt="background">
+    </div>
+    <canvas id="fireworks"></canvas>
+    <div id="startScreen" class="start-screen">
+        <canvas id="cakeCanvas" class="cake-background"></canvas>
+        <div class="start-content">
+            <button id="startButton" class="start-button">
+                🍰🍰🍰生日快乐🎉🎉🎉
+            </button>
+        </div>
+    </div>
+    <audio id="birthdaySong" loop>
+        <source src="./static/birthday.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="launchSound" preload="auto">
+        <source src="https://example.com/launch.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="explosionSound" preload="auto">
+        <source src="https://example.com/explosion.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" class="music-btn">
+        <span class="music-icon">🎵</span>
+    </button>
+    <div class="birthday-text">
+        <div class="heart-container">
+            <div class="heart">
+                <h1>老婆生日快乐!</h1>
+                <p>愿你每一天都充满欢乐与幸福</p>
+            </div>
+        </div>
+    </div>
+    <script src="fireworks.js"></script>
+</body>
+</html> 
